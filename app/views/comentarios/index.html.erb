@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Comentarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entrada blog</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @comentarios.each do |comentario| %>
+      <tr>
+        <td><%= comentario.entrada_blog_id %></td>
+        <td><%= comentario.body %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
